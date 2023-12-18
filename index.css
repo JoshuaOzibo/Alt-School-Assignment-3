@@ -1,0 +1,482 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  background: #f5f8fa;
+}
+
+.Navbar {
+  display: flex;
+  background: #f5f8fa;
+  justify-content: center;
+  align-items: center;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+.NavbarBox {
+  width: 1440px;
+  border-bottom: 2px solid #c4c6c7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Nav-logo img {
+  margin-block-start: 30px;
+  margin-block-end: 30px;
+}
+
+.NavLinks {
+  display: flex;
+  align-items: center;
+}
+
+.NavLinks ul {
+  display: flex;
+}
+
+.NavLinks ul li {
+  list-style: none;
+  cursor: pointer;
+  margin-right: 44px;
+  padding-block-start: 11px;
+  padding-block-end: 12px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #1d2c3c;
+  font-family: "Lato", sans-serif;
+}
+
+.NavLinks button {
+  width: 91px;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 6px;
+  border: 2px solid #646e7a;
+  padding-bottom: 3px;
+}
+
+.rectangle-card {
+  width: 100%;
+}
+
+.main-card {
+  width: 892px;
+  height: 795px;
+  border-radius: 6px 0 6px 6px;
+  background: #fff;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05),
+    0px 15px 35px 0px rgba(43, 64, 78, 0.1);
+  margin: 85px auto 0;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.main-input-sec {
+  width: 580px;
+}
+
+.main-card h2 {
+  width: 161px;
+  height: 54px;
+  margin-inline-start: 48px;
+  margin-block-start: 41px;
+  color: #1d2c3c;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.check {
+  border-bottom: 3px solid #f5f7fa;
+}
+
+.first-name-last-name {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 30px;
+  margin-block-start: 9px;
+}
+
+.first-name-last-name input {
+  width: 227px;
+  height: 36px;
+  border-radius: 4px;
+  border: 1px solid black;
+  outline: none;
+  padding-inline-start: 13px;
+  padding-inline-end: 27px;
+}
+
+.basic-info-1 {
+  display: flex;
+}
+
+.basic-info-1 span {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 2px solid #548bc5;
+  border-radius: 100%;
+}
+
+.basic-info-1 h3 {
+  margin-left: 8px;
+  font-family: "Lato", sans-serif;
+}
+
+.basic-info-email {
+  margin-block-start: 15px;
+}
+
+.basic-info-email input {
+  width: 370px;
+  height: 36px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+  padding-inline-start: 13px;
+  padding-inline-end: 27px;
+}
+
+.basic-info-input label {
+  color: #1d2c3c;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.bacic-info-section {
+  border-bottom: 3px solid #f5f7fa;
+  margin-block-start: 60px;
+  padding-inline-start: 49px;
+  padding-inline-end: 48px;
+  padding-block-end: 43px;
+}
+
+.payment-section {
+  border-bottom: 3px solid #f5f7fa;
+  padding-inline-start: 49px;
+  padding-inline-end: 48px;
+  padding-block-end: 43px;
+  margin-block-start: 33px;
+}
+
+.payment-section .payment-info-1 {
+  display: flex;
+}
+
+.payment-section h3 {
+  margin-left: 8px;
+  font-family: "Lato", sans-serif;
+}
+
+.payment-section .payment-info-1 span {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 2px solid #548bc5;
+  border-radius: 100%;
+}
+
+.payment-section input {
+  width: 483px;
+  height: 36px;
+  border-radius: 4px;
+  border: 1px solid black;
+  outline: none;
+  padding-inline-start: 13px;
+  padding-inline-end: 27px;
+}
+.payment-section .card-sec {
+  margin-block-start: 27px;
+}
+
+.purchase {
+  width: 100%;
+}
+
+.purchase-card {
+  width: 483px;
+  height: 146.101px;
+  margin-inline-start: 49px;
+  margin-inline-end: 48px;
+  margin-block-start: 39px;
+}
+
+.purchase-card input {
+  width: 483px;
+  border-radius: 5px;
+  background: #038e7d;
+  color: #fff;
+  color: #fff;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.396px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid black;
+  padding-block-start: 13px;
+  padding-block-end: 17px;
+}
+
+.mask-logo-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: 24px;
+}
+
+.mask-logo-p p {
+  margin-inline-start: 10px;
+  color: #646e7a;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.01px;
+}
+
+.mask-logo-p span {
+  color: #1d2c3c;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.01px;
+}
+
+.purchase-card .powered-by-stripe {
+  margin: auto;
+  margin-block-start: 30px;
+  margin-block-end: 46.9px;
+}
+
+.free-container {
+  width: 312px;
+  height: 795px;
+  border-radius: 0px 0 6px 0px;
+  background: #1179bf;
+  padding-inline-start: 44px;
+}
+
+.freelancer {
+  width: 231px;
+  height: 152px;
+  position: absolute;
+  color: #fff;
+  margin-block-start: 42px;
+}
+
+.freelancer h4 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01px;
+  margin-block-end: 5px;
+}
+
+.freelancer .sup-dolla {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.015px;
+}
+
+.freelancer .sup-number {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.015px;
+}
+
+.freelancer .year {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.015px;
+}
+
+.freelancer samp {
+  display: flex;
+}
+
+.flex-items {
+  display: flex;
+  align-items: end;
+}
+
+.freelancer-details {
+  width: 170px;
+  margin-block-start: 230px;
+  position: absolute;
+}
+
+.freelancer-details div {
+  display: flex;
+  font-size: 16px;
+  padding-block-end: 16px;
+}
+
+.freelancer-details p {
+  margin-inline-start: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+}
+
+.switch {
+  position: absolute;
+  margin-block-start: 383px;
+  color: #fff;
+}
+
+.switch p {
+  margin-block-end: 15px;
+}
+
+.switch a {
+  color: #fff;
+  text-decoration: 3px underline;
+  text-decoration-color: #b9f5ff;
+}
+
+.quote {
+  width: 229px;
+  height: 196px;
+  border-top: 2px solid #b9f5ff;
+  position: absolute;
+  margin-block-start: 490px;
+  padding-block-start: 43px;
+  color: #fff;
+}
+.quote span {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.009px;
+}
+
+.bitmap-img {
+  display: flex;
+  align-items: center;
+  margin-block-start: 32px;
+}
+.bitmap-img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.bitmap-img h4 {
+  margin-inline-start: 14px;
+}
+
+.footer {
+  width: 867px;
+  text-align: center;
+  margin: 33px auto 139px;
+  color: #636b6f;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer footer p span {
+  color: #31708f;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
